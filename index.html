@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <title>SheCodes Basics Final Project</title>
+    <style>
+      body {
+        background: linear-gradient(
+          to right,
+          rgb(255, 65, 108),
+          rgb(255, 75, 43)
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #a3de83;
+      }
+
+      h2 {
+        text-align: center;
+        color: #2eb872;
+        padding: 10px;
+      }
+      h3 {
+        padding: auto;
+        margin: 0 auto;
+      }
+      ul {
+        padding: auto;
+        margin: 0 auto;
+      }
+      p {
+        text-align: center;
+        border: 1.5px solid #2eb872;
+        line-height: 1.5;
+        border-radius: 5px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 15px;
+        max-width: 70%;
+        border-radius: 5px;
+      }
+
+      button {
+        display: block;
+        margin: 10px auto;
+        background: #a3de83;
+        color: #0b8457;
+        border-radius: 10px;
+        font-size: 17px;
+        padding: 10px 10px;
+        box-shadow: #2eb872;
+      }
+
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+      }
+
+      .builtby {
+        text-align: center;
+        border: 1.5px solid #2eb872;
+        line-height: 1.5;
+        border-radius: 5px;
+        padding: 5px 10px;
+      }
+
+      .learnmore {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #0b8457;
+      }
+      .learnmore:hover {
+        text-decoration: underline;
+        color: #a3de83;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Benefits of eating Watermelon 🍉</h1>
+      <h2>
+        Watermelon is packed with nutrients and beneficial plant compounds
+      </h2>
+      <h3>Watermelon helps with:</h3>
+      <ul>
+        <li>Hydration</li>
+        <li>Moving blood through the body</li>
+        <li>Heart health</li>
+      </ul>
+    </br>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/288/original/watermelon_for_shecodes.jpeg?1687136271"
+        alt="Watermelon"
+      />
+      <p>
+        Watermelon is a flowering plant species of the Cucurbitaceae family and
+        the name of its edible fruit. A scrambling and trailing vine-like plant,
+        it is a highly cultivated fruit worldwide, with more than 1,000
+        varieties.
+      </p>
+
+      <button>Buy Watermelons Here</button>
+      <div class="builtby">
+        <strong>This page was built by: <em> Lauren N. Evans</em></strong>
+      </div>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Watermelon"
+        target="_blank"
+        class="learnmore"
+      >
+        Click me to learn more about Watermelon
+      </a>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let fruit = prompt("What is your favorite fruit?");
+
+        if(name.length)
+
+        alert("Thanks for viewing " + name + fruit + "s"+ " are delicious!");
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
